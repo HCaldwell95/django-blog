@@ -31,9 +31,10 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     '8000-hcaldwell95-djangoblog-6b7uegclesb.ws.codeinstitute-ide.net', 
-    'herokuapp.com'
+    '.herokuapp.com',
+    'django-blog-hc-53b1ceba3765.herokuapp.com',
+    'localhost',
 ]
-
 
 # Application definition
 
@@ -91,6 +92,12 @@ WSGI_APPLICATION = 'codestar.wsgi.application'
 DATABASES = {
     'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
 }
+
+CSRF_TRUSTED_ORIGINS = [
+    "https://*.gitpod.io",
+    "https://*herokuapp.com",
+    "https://*.codeinstitute-ide.net"
+]
 
 
 # Password validation
