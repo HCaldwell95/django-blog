@@ -34,6 +34,8 @@ ALLOWED_HOSTS = [
     '.herokuapp.com',
     'django-blog-hc-53b1ceba3765.herokuapp.com',
     'localhost',
+    'https://5432-hcaldwell95-djangoblog-6b7uegclesb.ws.codeinstitute-ide.net/',
+    'https://42945-hcaldwell95-djangoblog-6b7uegclesb.ws.codeinstitute-ide.net/',
 ]
 
 # Application definition
