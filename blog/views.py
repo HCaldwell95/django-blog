@@ -6,7 +6,4 @@ from .models import Post
 
 class PostList(generic.ListView):
         model = Post
-
-def blog(request):
-    # Your view logic here
-    return render(request, 'blog/blog.html')
+        template_name = 'blog/post_list.html'
